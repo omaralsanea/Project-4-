@@ -1,0 +1,9 @@
+{
+  "model": "exercises.exercise",
+  "pk": 1,
+  "fields": {
+    "title": "Arnold Press",
+    "image": "http://image.com/myimage.png",
+    "muscles": [3]
+  }
+}
