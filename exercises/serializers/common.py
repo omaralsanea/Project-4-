@@ -45,10 +45,10 @@ class MuscleSerializer(serializers.ModelSerializer):
         fields = ('__all__')
 
 
-# Nested serializer derives from/inheritse the ExerciseSerializer. Has extra serializers for nested objects
+# Nested serializer derives from/inherits the ExerciseSerializer. Has extra serializers for nested objects
 class PopulatedExerciseSerializer(ExerciseSerializer):
 
-    # When an 'level' property is found on the object it will use this serializer
+    # When a 'level' property is found on the object it will use this serializer
     level = LevelSerializer()
 
     # When a 'muscles' property is found on the object it will use this serializer

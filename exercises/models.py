@@ -56,6 +56,8 @@ class Exercise(models.Model):
     muscles = models.ManyToManyField(
         Muscle, related_name='exercises', blank=True)
 
+    description = models.CharField(max_length=200, blank=True)
+
     # Function to define how we want an Exercise to look in the admin area, when converting the object to a string
     def __str__(self):
         return self.title

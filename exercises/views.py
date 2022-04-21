@@ -1,6 +1,6 @@
 # status gives us a list of possible response codes
 from rest_framework import status
-from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView, RetrieveAPIView
+from rest_framework.generics import ListAPIView, CreateAPIView, RetrieveUpdateDestroyAPIView, RetrieveAPIView
 # This imports rest_framework's APIView that we'll use to extend to our custom view
 from rest_framework.views import APIView
 # Response gives us a way of sending a HTTP response to the user making the request, passing back data and other information
@@ -17,7 +17,7 @@ from .serializers.common import *
 # List exercises generic view
 
 
-class ExerciseList(ListCreateAPIView):
+class ExerciseList(ListAPIView):
 
     # Handles all exercises
     queryset = Exercise.objects.all()
@@ -25,7 +25,18 @@ class ExerciseList(ListCreateAPIView):
     # Choose serializer to use
     serializer_class = PopulatedExerciseSerializer
 
- # Update or delete exercises generic view
+# Update or delete exercises generic view
+
+
+class ExerciseCreate(CreateAPIView):
+
+    # Handles all exercises
+    queryset = Exercise.objects.all()
+
+    # Choose serializer to use
+    serializer_class = ExerciseSerializer
+
+# Update or delete exercises generic view
 
 
 class ExerciseUpdateDestroy(RetrieveUpdateDestroyAPIView):
@@ -61,7 +72,7 @@ class LevelListCreate(APIView):
         levels = Level.objects.all()
 
         # Serialize the levels to JSON by using an LevelSerializer with the many=True flag
-        serialized_levels = PopulatedLevelSerializer(levels, many=True)
+        serialized_levels = PopulatedLevelSerializer(levels)
 
         # Return the serialized levels with a HTTP 200 status code
         return Response(data=serialized_levels.data, status=status.HTTP_200_OK)

@@ -16,4 +16,4 @@ class Review(models.Model):
     # updated_date = models.DateField(auto_now=True)
 
     def __str__(self):
-        return f"{self.exercise} {self.exercise.level.name} review written by {self.owner} is: {self.text} written at {self.created_date}"
+        return f"Exercise: {self.exercise} Level: {self.exercise.level.name} review written by: {self.owner}: {self.text} written at {self.created_date}"

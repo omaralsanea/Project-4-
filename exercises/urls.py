@@ -5,6 +5,7 @@ urlpatterns = [
 
     # Generic views for exercises
     path('exercises/', ExerciseList.as_view()),
+    path('exercises/create', ExerciseCreate.as_view()),
 
     # Wire up the view - <int:pk> is known as a captured value - it works the same as a placeholder in react/express: ":id"
     # It's made up of two parts:

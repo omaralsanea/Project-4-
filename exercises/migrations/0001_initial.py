@@ -40,6 +40,7 @@ class Migration(migrations.Migration):
                  related_name='exercises', to='exercises.level')),
                 ('muscles', models.ManyToManyField(blank=True,
                  related_name='exercise', to='exercises.muscle')),
+                ('description', models.CharField(blank=True, max_length=200)),
             ],
         ),
     ]
