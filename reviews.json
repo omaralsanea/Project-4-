@@ -1,0 +1,12 @@
+[
+{
+  "model": "reviews.review",
+  "pk": 1,
+  "fields": {
+    "text": "This exercise sucks!",
+    "owner": 2,
+    "exercise": 1,
+    "created_date": "2022-04-19"
+  }
+}
+]

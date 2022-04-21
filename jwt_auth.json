@@ -1,0 +1,40 @@
+[
+{
+  "model": "jwt_auth.customuser",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$yeXA9gNmP3UNVfyYxXIUTs$1o46DBZBWx4r2pic1nO4ZbUCpmpIKGmG2U7Z0u/+0P8=",
+    "last_login": "2022-04-19T10:09:06.998Z",
+    "is_superuser": true,
+    "username": "omar",
+    "first_name": "",
+    "last_name": "",
+    "email": "omaralsanea@hotmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-04-19T10:08:40.493Z",
+    "image": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.customuser",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$fZ3coruWRXc0VADKYifWVQ$fa+sFCtZgQQHnJ0K/BYL3/Qe5/OlhzY+v557W1sbjnA=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "dudeman3",
+    "first_name": "",
+    "last_name": "",
+    "email": "dudeman3@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-04-19T11:42:53.845Z",
+    "image": "smiling-face.gif",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

@@ -1,0 +1,236 @@
+[
+{
+  "model": "exercises.level",
+  "pk": 1,
+  "fields": {
+    "name": "Intermediate"
+  }
+},
+{
+  "model": "exercises.level",
+  "pk": 2,
+  "fields": {
+    "name": "Intermediate"
+  }
+},
+{
+  "model": "exercises.level",
+  "pk": 3,
+  "fields": {
+    "name": "Advanced"
+  }
+},
+{
+  "model": "exercises.level",
+  "pk": 4,
+  "fields": {
+    "name": "Beginner"
+  }
+},
+{
+  "model": "exercises.muscle",
+  "pk": 1,
+  "fields": {
+    "name": "Shoulder"
+  }
+},
+{
+  "model": "exercises.muscle",
+  "pk": 2,
+  "fields": {
+    "name": "Chest"
+  }
+},
+{
+  "model": "exercises.muscle",
+  "pk": 3,
+  "fields": {
+    "name": "Back"
+  }
+},
+{
+  "model": "exercises.muscle",
+  "pk": 4,
+  "fields": {
+    "name": "Calves"
+  }
+},
+{
+  "model": "exercises.muscle",
+  "pk": 5,
+  "fields": {
+    "name": "Biceps"
+  }
+},
+{
+  "model": "exercises.muscle",
+  "pk": 6,
+  "fields": {
+    "name": "Triceps"
+  }
+},
+{
+  "model": "exercises.muscle",
+  "pk": 7,
+  "fields": {
+    "name": "Hamstrings"
+  }
+},
+{
+  "model": "exercises.muscle",
+  "pk": 8,
+  "fields": {
+    "name": "Lats"
+  }
+},
+{
+  "model": "exercises.muscle",
+  "pk": 9,
+  "fields": {
+    "name": "Traps"
+  }
+},
+{
+  "model": "exercises.muscle",
+  "pk": 10,
+  "fields": {
+    "name": "Glutes"
+  }
+},
+{
+  "model": "exercises.muscle",
+  "pk": 11,
+  "fields": {
+    "name": "Quads"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 1,
+  "fields": {
+    "title": "Arnold Press",
+    "level": 1,
+    "image": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Arnold-Press.gif",
+    "muscles": [
+      1,
+      6
+    ]
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 2,
+  "fields": {
+    "title": "Barbell Standing Press",
+    "level": 1,
+    "image": "https://www.inspireusafoundation.org/wp-content/uploads/2022/04/military-press.gif",
+    "muscles": [
+      1,
+      6
+    ]
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 3,
+  "fields": {
+    "title": "Bench Press",
+    "level": 2,
+    "image": "https://i.pinimg.com/originals/08/60/37/08603700cb6365ab40466f4dd9d49e23.gif",
+    "muscles": [
+      2,
+      6
+    ]
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 4,
+  "fields": {
+    "title": "Bent Over Reverse Fly",
+    "level": 4,
+    "image": "https://fitnessprogramer.com/wp-content/uploads/2021/04/bent-over-reverse-cable-fly.gif",
+    "muscles": [
+      1,
+      3,
+      8,
+      9
+    ]
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 5,
+  "fields": {
+    "title": "Bent Over Row",
+    "level": 3,
+    "image": "https://homeworkouts.org/wp-content/uploads/anim-kettlebell-bent-over-rows.gif",
+    "muscles": [
+      3,
+      8,
+      9,
+      5,
+      2
+    ]
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 6,
+  "fields": {
+    "title": "Calf Raise",
+    "level": 4,
+    "image": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Dumbbell-Calf-Raise.gif",
+    "muscles": [
+      4
+    ]
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 7,
+  "fields": {
+    "title": "Chin Up",
+    "level": 3,
+    "image": "https://fitnessprogramer.com/wp-content/uploads/2021/03/Chin-Up.gif",
+    "muscles": [
+      5,
+      8,
+      1,
+      9
+    ]
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 8,
+  "fields": {
+    "title": "Deadlift",
+    "level": 3,
+    "image": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Barbell-Deadlift.gif",
+    "muscles": [
+      3,
+      8,
+      9,
+      10,
+      7,
+      4,
+      11
+    ]
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 9,
+  "fields": {
+    "title": "Dumbell Shoulder Press",
+    "level": 4,
+    "image": "https://newlife.com.cy/wp-content/uploads/2019/12/22371301-Dumbbell-Seated-Shoulder-Press-female_Shoulders_720.gif",
+    "muscles": [
+      8,
+      1,
+      5
+    ]
+  }
+}
+]

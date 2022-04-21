@@ -102,7 +102,7 @@ if ENV != 'DEV':
 else:
     DATABASES['default'] = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'bookstore-custom-user',  # < --- make sure you chage this
+        'NAME': 'exercises',  # < --- make sure you chage this
         'HOST': 'localhost',
         'PORT': 5432
     }
