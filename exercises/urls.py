@@ -23,4 +23,6 @@ urlpatterns = [
     path('levels/', LevelListCreate.as_view()),
     path('levels/<int:pk>/', LevelRetrieveUpdateDelete.as_view()),
 
+    path('exercises-for-muscle/<int:pk>/', ExercisesForMuscle.as_view()),
+
 ]

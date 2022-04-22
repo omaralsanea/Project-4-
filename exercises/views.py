@@ -174,3 +174,19 @@ class LevelRetrieveUpdateDelete(APIView):
             # Raising an exception is when you're indicating a specific behaviour or outcome like NotFound
             # Returning an exception is for something generic like Response above
             raise NotFound(detail="Can't find that level")
+
+
+
+class ExercisesForMuscle(APIView):
+
+    def get(self, request, pk):
+        
+        print(f"The muscle ID is: {pk}")
+
+        muscle = Muscle.objects.get(pk=pk)
+
+        exercises_for_muscle = muscle.exercises
+
+        exercises_serializer = ExerciseSerializer(exercises_for_muscle, many=True)
+
+        return Response(data=exercises_serializer.data,status=200)
