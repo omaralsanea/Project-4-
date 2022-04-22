@@ -44,7 +44,7 @@ class Exercise(models.Model):
 
     # Text field with a maximum length
     # - blank=True means that we allow empty values to be set here
-    image = models.CharField(max_length=200, blank=True)
+    image = models.CharField(max_length=2000, blank=True)
 
     # Date field that allows nulls
     ##### release_date = models.DateField(null=True)
@@ -56,7 +56,7 @@ class Exercise(models.Model):
     muscles = models.ManyToManyField(
         Muscle, related_name='exercises', blank=True)
 
-    description = models.CharField(max_length=200, blank=True)
+    description = models.TextField(blank=True)
 
     # Function to define how we want an Exercise to look in the admin area, when converting the object to a string
     def __str__(self):

@@ -15,25 +15,30 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Level',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(auto_created=True,
+                 primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=100)),
             ],
         ),
         migrations.CreateModel(
             name='Muscle',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(auto_created=True,
+                 primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=30)),
             ],
         ),
         migrations.CreateModel(
             name='Exercise',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(auto_created=True,
+                 primary_key=True, serialize=False, verbose_name='ID')),
                 ('title', models.CharField(max_length=50)),
-                ('image', models.CharField(blank=True, max_length=200)),
-                ('level', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, related_name='exercises', to='exercises.level')),
-                ('muscles', models.ManyToManyField(blank=True, related_name='exercises', to='exercises.muscle')),
+                ('image', models.CharField(blank=True, max_length=2000)),
+                ('level', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE,
+                 related_name='exercises', to='exercises.level')),
+                ('muscles', models.ManyToManyField(blank=True,
+                 related_name='exercises', to='exercises.muscle')),
             ],
         ),
     ]
